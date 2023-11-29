@@ -1,4 +1,4 @@
-import SingleBlog from "@/components/Blog/SingleBlog";
+/* import SingleBlog from "@/components/Blog/SingleBlog";
 import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
@@ -100,3 +100,4 @@ const Blog = () => {
 };
 
 export default Blog;
+ */

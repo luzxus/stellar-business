@@ -5,29 +5,30 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Robin Grönroos",
+    designation: "Din konsultbyrå",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+      "Jag är mycket nöjd med den service jag har fått från StellarWeb Solutions när de hjälpte mig att skapa en ny och attraktiv hemsida för min konsultbyrå. Innan vi anlitade StellarWeb Solutions hade vi en ganska grundläggande och inte särskilt tilltalande WordPress-sida. Med deras professionella hjälp har vi nu fått en hemsida som inte bara ser fantastisk ut utan också har lockat till sig många nya kunder.",
+    image: "/images/testimonials/profilplaceholder.jpg",
     star: 5,
   },
-  {
+   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Marcus B",
+    designation: "Ingka",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+      "Richard joined and strengthened our development team, he swiftly got an overview of the solution and was able to start delivering in no time. Richard has an open way that invites dialogue that often revolves around well thought through suggestions for improvement from himself. Should our paths cross again, I would feel confident in facing future challenges with Richard",
+      image: "/images/testimonials/profilplaceholder.jpg",
     star: 5,
   },
+  
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Ajas Mm",
+    designation: "IKEA",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "Richard at StellarWeb solutions is a professional developer with impeccable talent. I was amazed by how quickly he integrated with our business and became comfortable with delivering a solution that fit us perfectly. I would recommend him as a strong, efficient and professional for any project and definitely would love to work again with Richard.",
+      image: "/images/testimonials/profilplaceholder.jpg",
     star: 5,
   },
 ];
@@ -37,8 +38,8 @@ const Testimonials = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Referenser"
+          paragraph=""
           center
         />
 

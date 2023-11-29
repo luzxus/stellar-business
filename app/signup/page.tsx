@@ -1,4 +1,4 @@
-import Link from "next/link";
+/* import Link from "next/link";
 
 import { Metadata } from "next";
 
@@ -249,3 +249,4 @@ const SignupPage = () => {
 };
 
 export default SignupPage;
+ */

@@ -15,7 +15,7 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
               Om du har några funderingar kring våra tjänster, priser eller övrigt så tveka inte att kontakta oss så återkommer vi så snart vi kan!
               </p>
-              <form data-netlify="true" data-netlify-honeypot="bot-field"  name="contact-form" method="POST">
+              <form data-netlify="true"  name="contact-form" method="POST">
                 <input type="hidden" name="form-name" value="contact-form" />
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">

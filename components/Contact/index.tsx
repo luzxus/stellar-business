@@ -16,17 +16,7 @@ const Contact = () => {
               Om du har några funderingar kring våra tjänster, priser eller övrigt så tveka inte att kontakta oss så återkommer vi så snart vi kan!
               </p>
               <form data-netlify="true" data-netlify-honeypot="bot-field"  name="contact-form" method="POST">
-                <input
-                  type="hidden"
-                  name="subject"
-                  value={`You've got mail`}
-                />
                 <input type="hidden" name="form-name" value="contact-form" />
-                <p hidden>
-                  <label>
-                    Don’t fill this out: <input name="bot-field" />
-                  </label>
-                </p>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">

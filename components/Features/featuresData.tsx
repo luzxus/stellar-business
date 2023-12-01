@@ -74,7 +74,7 @@ const featuresData: Feature[] = [
     ),
     title: "SEO",
     paragraph:
-      "Våra lösningar är lätta för sökmotrer att indexera och ranka på nationell- och internationell nivå.",
+      "Våra lösningar är lätta för sökmotorer att indexera och ranka på nationell- och internationell nivå.",
   },
   {
     id: 1,

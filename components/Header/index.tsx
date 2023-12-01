@@ -38,6 +38,7 @@ const Header = () => {
 
   const usePathName = usePathname();
 
+
   return (
     <>
       <header
@@ -159,9 +160,10 @@ const Header = () => {
                   Sign Up
                 </Link>
                 <div>
-                  <ThemeToggler />
+                  
                 </div>
               </div> */}
+              <ThemeToggler />
             </div>
           </div>
         </div>

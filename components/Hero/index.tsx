@@ -1,26 +1,29 @@
-import { url } from "inspector";
+"use client"
+import { astronaut_laptop } from "@/public/images";
+import { useTheme } from "next-themes";
+import Image from "next/image";
 import Link from "next/link";
-/*  */
-/*    style={{
-    backgroundImage: 'url("../../public/images/hero/astronaut_2.jpg")',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-  }} */
 const Hero = () => {
+const {theme} = useTheme();
+
   return (
     <>
       <section
 
         id="home"
-        className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="flex flex-col md:flex-row-reverse pl-[1rem] pr-[2rem] dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
+    
+<div className="opacity-[0.68] md:opacity-100 inline-block" style={{ borderRadius: '15px', padding: '15px' }}>
+  <Image src={astronaut_laptop} alt="" width={500} height={0} style={{ height: 'auto', filter: 'hue-rotate(175deg' }}  className="rounded-full"  />
+</div>
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div
-                className="wow fadeInUp mx-auto max-w-[800px] text-center"
+                className="wow fadeInUp mx-3 max-w-[800px] text-start relative z-40"
                 data-wow-delay=".2s"
+               
               >
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                   Kontakta oss för en kostnadsfri rådgivning

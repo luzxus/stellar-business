@@ -1,12 +1,14 @@
+import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
+import { astronaut } from "@/public/images";
 
 const Features = () => {
   return (
     <>
       <section id="features" className="py-16 md:py-20 lg:py-28">
-        <div className="container">
+        <div className="container relative">
           <SectionTitle
             title="Tjänster"
             paragraph="På StellarWeb Solutions tar vi ett fräscht och innovativt förhållningssätt till småföretagsrådgivning."
@@ -18,6 +20,14 @@ const Features = () => {
               <SingleFeature key={feature.id} feature={feature} />
             ))}
           </div>
+         {/*  <Image
+                  src={astronaut}
+                  alt="about-image"
+                  width={300}
+                  height={0}
+                  style={{height:"auto"}}
+                  className="rounded-full absolute flex drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
+                /> */}
         </div>
       </section>
     </>

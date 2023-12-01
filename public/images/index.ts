@@ -1,2 +1,5 @@
-import astronaut_2 from "./hero/astronaut_2.jpg"
-export {astronaut_2}
+import astronaut_laptop from "./hero/astronaut_laptop.webp";
+import robot_human from "./hero/robot_human.jpg";
+import astronaut from "./hero/astronaut.webp"
+
+export {astronaut_laptop,robot_human, astronaut}

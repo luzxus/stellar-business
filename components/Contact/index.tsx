@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap">
+        <div className="-mx-4 flex flex-wrap justify-center">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
               className="wow fadeInUp mb-12 rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
@@ -13,7 +13,7 @@ const Contact = () => {
                 Behöver du hjälp? Kontakta oss
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-                Vårat team återkommer dig så fort vi kan
+              Om du har några funderingar kring våra tjänster, priser eller övrigt så tveka inte att kontakta oss så återkommer vi så snart vi kan!
               </p>
               <form data-netlify="true" data-netlify-honeypot="bot-field"  name="contact-form" method="POST">
                 <input

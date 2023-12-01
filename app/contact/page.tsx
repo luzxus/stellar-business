@@ -14,7 +14,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Kontakt"
-        description="Om du har några funderingar kring våra tjänster, priser eller övrigt så tveka in att kontakta oss så återkommer vi så snart vi kan"
+        description="Hör av dig till oss och berätta vad du behöver hjälp med så återkommer vi så snart vi kan."
       />
 
       <Contact />

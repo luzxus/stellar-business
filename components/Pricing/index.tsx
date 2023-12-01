@@ -12,7 +12,7 @@ const Pricing = () => {
       <div className="container">
         <SectionTitle
           title="Enkel och tydlig prissättning"
-          paragraph="Välj att betala av i månaden eller allt på en gång med ett fast pris"
+          paragraph="Välj att betala av i månaden (bundet till 12 månader) eller allt på en gång med ett fast pris"
           center
           width="665px"
         />

@@ -1,5 +1,41 @@
+"use client"
+import axios from 'axios';
+import { useState } from 'react';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Mailchimp subscription logic
+    try {
+      const response = await axios.post(
+        '/api/mail', // Create an API route for handling Mailchimp subscription
+        {
+          email: formData.email,
+          message: formData.message,
+          name: formData.name
+        }
+      );
+
+      console.log('Mailchimp response:', response.data);
+
+      // Add any additional logic you need after subscribing the user
+
+    } catch (error) {
+      console.error('Mailchimp error:', error.response.data);
+    }
+  };
+
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -15,9 +51,9 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Vi kommer att återkomma till dig så snart som möjligt via e-post.
               </p>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
-                  <div className="w-full px-4 md:w-1/2">
+                <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
                       <label
                         htmlFor="name"
@@ -26,6 +62,7 @@ const Contact = () => {
                         Ditt namn
                       </label>
                       <input
+                      onChange={handleChange}
                         type="text"
                         placeholder="Ange ditt namn"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
@@ -41,6 +78,8 @@ const Contact = () => {
                         Din e-post
                       </label>
                       <input
+                      onChange={handleChange}
+
                         type="email"
                         placeholder="Ange din e-post"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
@@ -56,6 +95,7 @@ const Contact = () => {
                         Ditt meddelande
                       </label>
                       <textarea
+                      onChange={handleChange}
                         name="message"
                         rows={5}
                         placeholder="Ange ditt meddelande"
@@ -64,7 +104,10 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90">
+                    <button
+                      type="submit"
+                      className="shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
+                    >
                       Skicka
                     </button>
                   </div>
@@ -72,9 +115,6 @@ const Contact = () => {
               </form>
             </div>
           </div>
-         {/*  <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
-            <NewsLatterBox />
-          </div> */}
         </div>
       </div>
     </section>

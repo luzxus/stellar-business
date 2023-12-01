@@ -12,7 +12,7 @@ const testimonialData: Testimonial[] = [
     image: "/images/testimonials/profilplaceholder.jpg",
     star: 5,
   },
-   {
+ /*   {
     id: 2,
     name: "Marcus B",
     designation: "Ingka",
@@ -30,7 +30,7 @@ const testimonialData: Testimonial[] = [
       "Richard at StellarWeb solutions is a professional developer with impeccable talent. I was amazed by how quickly he integrated with our business and became comfortable with delivering a solution that fit us perfectly. I would recommend him as a strong, efficient and professional for any project and definitely would love to work again with Richard.",
       image: "/images/testimonials/profilplaceholder.jpg",
     star: 5,
-  },
+  }, */
 ];
 
 const Testimonials = () => {
@@ -43,7 +43,7 @@ const Testimonials = () => {
           center
         />
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-1 lg:grid-cols-1">
           {testimonialData.map((testimonial) => (
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
           ))}

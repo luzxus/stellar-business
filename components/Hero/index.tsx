@@ -1,4 +1,6 @@
+import { url } from "inspector";
 import Link from "next/link";
+/*  */
 /*    style={{
     backgroundImage: 'url("../../public/images/hero/astronaut_2.jpg")',
     backgroundSize: 'cover',

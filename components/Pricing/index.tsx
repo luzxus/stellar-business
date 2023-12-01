@@ -94,7 +94,7 @@ const Pricing = () => {
             packageName="Premium"
             price={isMonthly ? "1 500" : "15 000"}
             duration={isMonthly ? "mån" : "fast"}
-            subtitle="En mer avancerad och dynamisk hemsida med upp till 50 sidor, skräddarsydd design, responsiv layout, avancerad SEO, blogg, innehållshanteringssystem, sociala medier integration och analysverktyg."
+            subtitle="En mer avancerad och dynamisk hemsida med integrerat innehållshanteringssystem, skräddarsydd design, responsiv layout, uttökat SEO för att uppnå högre rankning bland sökmotorer, blogg, sociala medier integration och möjlighet att skicka ut nyhetsbrev etc."
           >
             {" "}
             <OfferList

@@ -15,7 +15,18 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Vårat team återkommer dig så fort vi kan
               </p>
-              <form data-netlify="true">
+              <form data-netlify="true" data-netlify-honeypot="bot-field">
+                <input
+                  type="hidden"
+                  name="subject"
+                  value={`You've got mail`}
+                />
+                <input type="hidden" name="form-name" value="contact-form" />
+                <p hidden>
+                  <label>
+                    Don’t fill this out: <input name="bot-field" />
+                  </label>
+                </p>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -71,6 +82,7 @@ const Contact = () => {
                 </div>
               </form>
             </div>
+            {/* profile pic */}
           </div>
         </div>
       </div>

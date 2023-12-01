@@ -15,62 +15,68 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
               Om du har några funderingar kring våra tjänster, priser eller övrigt så tveka inte att kontakta oss så återkommer vi så snart vi kan!
               </p>
-              <form data-netlify="true"  name="contact-form" method="POST">
-                <input type="hidden" name="form-name" value="contact-form" />
-                <div className="-mx-4 flex flex-wrap">
-                  <div className="w-full px-4 md:w-1/2">
-                    <div className="mb-8">
-                      <label
-                        htmlFor="name"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                      >
-                        Namn
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="Ange ditt namn"
-                        className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-                      />
-                    </div>
-                  </div>
-                  <div className="w-full px-4 md:w-1/2">
-                    <div className="mb-8">
-                      <label
-                        htmlFor="email"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                      >
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        placeholder="Email"
-                        className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-                      />
-                    </div>
-                  </div>
-                  <div className="w-full px-4">
-                    <div className="mb-8">
-                      <label
-                        htmlFor="message"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                      >
-                        Meddelande
-                      </label>
-                      <textarea
-                        name="message"
-                        rows={5}
-                        placeholder="Skriv ditt meddelande"
-                        className="w-full resize-none rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div className="w-full px-4">
-                    <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
-                      Skicka
-                    </button>
-                  </div>
-                </div>
-              </form>
+              <form data-netlify="true" name="contact-form" method="POST">
+  <input type="hidden" name="form-name" value="contact-form" />
+  <div className="-mx-4 flex flex-wrap">
+    <div className="w-full px-4 md:w-1/2">
+      <div className="mb-8">
+        <label
+          htmlFor="name"
+          className="mb-3 block text-sm font-medium text-dark dark:text-white"
+        >
+          Namn
+        </label>
+        <input
+          type="text"
+          name="name" // Add the name attribute
+          placeholder="Ange ditt namn"
+          className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+        />
+      </div>
+    </div>
+    <div className="w-full px-4 md:w-1/2">
+      <div className="mb-8">
+        <label
+          htmlFor="email"
+          className="mb-3 block text-sm font-medium text-dark dark:text-white"
+        >
+          Email
+        </label>
+        <input
+          type="email"
+          name="email" // Add the name attribute
+          placeholder="Email"
+          className="w-full rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+        />
+      </div>
+    </div>
+    <div className="w-full px-4">
+      <div className="mb-8">
+        <label
+          htmlFor="message"
+          className="mb-3 block text-sm font-medium text-dark dark:text-white"
+        >
+          Meddelande
+        </label>
+        <textarea
+          name="message"
+          rows={5}
+          placeholder="Skriv ditt meddelande"
+          className="w-full resize-none rounded-sm border border-stroke bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+        ></textarea>
+      </div>
+    </div>
+    <div className="w-full px-4">
+      <button
+        type="submit" // Add type attribute to make it a submit button
+        className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
+      >
+        Skicka
+      </button>
+    </div>
+  </div>
+</form>
+
             </div>
             {/* profile pic */}
           </div>

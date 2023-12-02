@@ -1,3 +1,6 @@
+import { profile1 } from "@/public/images";
+import Image from "next/image";
+
 const Contact = () => {
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
@@ -78,7 +81,12 @@ const Contact = () => {
 </form>
 
             </div>
-            {/* profile pic */}
+          </div>
+          <div className="Image-text flex flex-col mb-[10rem]">
+          <Image className="rounded-full" width={300} height={300} alt="" src={profile1}/>
+          <p className="text-center m-2 text-sm">Richard Grönroos</p>
+          <p className="text-center m-2 text-xs">Ägare och ansvarig utvecklare</p>
+
           </div>
         </div>
       </div>

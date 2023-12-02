@@ -2,7 +2,7 @@ import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
-import { astronaut } from "@/public/images";
+import { astronaut, rocket } from "@/public/images";
 
 const Features = () => {
   return (
@@ -20,14 +20,14 @@ const Features = () => {
               <SingleFeature key={feature.id} feature={feature} />
             ))}
           </div>
-         {/*  <Image
-                  src={astronaut}
+          <Image
+                  src={rocket}
                   alt="about-image"
                   width={300}
                   height={0}
                   style={{height:"auto"}}
-                  className="rounded-full absolute flex drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
-                /> */}
+                  className="z-40 top-[-9rem] left-[19rem] md:top-[-14rem] scale-[0.6] md:scale-100 absolute flex drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
+                />
         </div>
       </section>
     </>

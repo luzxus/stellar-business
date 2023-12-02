@@ -20,11 +20,18 @@ const menuData: Menu[] = [
     newTab: false,
   }, 
   {
+    id: 5,
+    title: "Utbildning",
+    path: "/courses",
+    newTab: false
+          },
+  {
     id: 3,
     title: "Kontakt",
     path: "/contact",
     newTab: false,
   },
+
   {
     id: 4,
     title: "Sidor",
@@ -48,6 +55,12 @@ const menuData: Menu[] = [
         path: "/pricing",
         newTab: false,
       },
+      {
+        id: 44,
+        title: "Utbildning",
+        path: "/courses",
+        newTab: false
+              },
    /*    {
         id: 44,
         title: "Blog Sidebar Page",

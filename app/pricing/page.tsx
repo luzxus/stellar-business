@@ -66,7 +66,7 @@ const Pricing = () => {
           packageName="Bas"
           price={isMonthly ? "500" : "5 000"}
           duration={isMonthly ? "mån" : "fast"}
-          subtitle="En enkel och statisk hemsida med upp till 10 sidor, anpassad design, responsiv layout, grundläggande SEO och kontaktformulär."
+          subtitle="En enkel och statisk hemsida med upp till 5 sidor, anpassad design, responsiv layout, grundläggande SEO och kontaktformulär."
         >
           {" "}
           <OfferList

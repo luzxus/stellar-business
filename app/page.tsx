@@ -10,6 +10,7 @@ import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
+import Courses from "./courses/page";
 
 export const metadata: Metadata = {
   title: "Stellar web solutions",

@@ -3,6 +3,7 @@ import SectionTitle from '@/components/Common/SectionTitle'
 import OfferList from '@/components/Pricing/OfferList'
 import PricingBox from '@/components/Pricing/PricingBox'
 import React, { useState } from 'react'
+import Courses from '../courses/page'
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -187,6 +188,7 @@ const Pricing = () => {
           />{" "}
         </PricingBox>{" "}
       </div>
+      <Courses/>
     </div>
 
     <div className="absolute bottom-0 left-0 z-[-1]">
